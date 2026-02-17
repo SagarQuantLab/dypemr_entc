@@ -44,19 +44,43 @@
 
 ########################
 # how to create dictionary from two lists?
-my_dict = {
-    "Name": "Rohan",
-    "Age" : 35,
-    "Gender" : "M"
-}
+# my_dict = {
+#     "Name": "Rohan",
+#     "Age" : 35,
+#     "Gender" : "M"
+# }
 
-print(my_dict["Name"])
-print(my_dict.keys())
-print(my_dict.values())
-print(my_dict.items())
-my_dict["Age"] = 18
-print(my_dict)
-my_dict.update({"Religion" : "Hindu"})
-print(my_dict)
-my_dict.pop("Gender")
-print(my_dict)
+# print(my_dict["Name"])
+# print(my_dict.keys())
+# print(my_dict.values())
+# print(my_dict.items())
+# my_dict["Age"] = 18
+# print(my_dict)
+# my_dict.update({"Religion" : "Hindu"})
+# print(my_dict)
+# my_dict.pop("Gender")
+# print(my_dict)
+
+# # tuples and its operation
+# my_tuple = ("Apple", "Banana", "orange")
+
+# print(my_tuple[0])
+# # my_tuple[0] = "Grapes"
+
+#######################
+# sets
+my_set = {"Apple", "Banana", "orange", "Mango", "orange"}
+print(my_set)
+my_set.add("Grapes")
+print(my_set)
+my_set.pop()
+print(my_set)
+
+
+#####################################
+# Comparision of List, Dict, tuple, Set
+#                Mutable                     Called              Ordered
+# LIST              Y                           Idx                 Y
+# DICT              Y                           keys                Y
+# Tuple             N                           Idx                 Y
+# Sets              N                           Idx                 N
