@@ -44,3 +44,25 @@ def addition(a, b, **kwargs):
     return sum
 
 print(addition(2, e=4))
+
+
+########## function overloading
+def add(a, b=0, c=0, d=0):
+    sum = a + b + c + d
+    return sum
+
+print(add(1, 2))
+print(add(1, 2, 3))
+print(add(1, 2, 3, 4))
+
+########## function over writing
+def add(a, b):
+    sum = a + b
+    return sum
+
+def add(a, b, c):
+    sum = a + b + c
+    return sum
+
+#print(add(2, 3)) # this will give error
+print(add(2, 3, 4))
