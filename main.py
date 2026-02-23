@@ -8,8 +8,13 @@
 # ins = hatchback("XYZ", "DEF", "KLM", "MNO")
 # print(ins.getCarDetails())
 
-from pythonOOPs.python_polymorphism import childClass
+# from pythonOOPs.python_polymorphism import childClass
 
-ins = childClass(2, 3)
-print(childClass.addition())
-print(childClass.multiplication())
+# ins = childClass(2, 3)
+# print(childClass.addition())
+# print(childClass.multiplication())
+
+from pythonOOPs.AbstractionClass import foodshop
+
+ins = foodshop("flour", "PizzaShop")
+print(ins.get_license())
